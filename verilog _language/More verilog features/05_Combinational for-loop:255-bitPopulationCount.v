@@ -4,7 +4,7 @@ module top_module(
 );
     always @(*) begin
      out = 0;
-     for(int i = 0; i < $bits(in); i++) 
+        for(int i = 0; i < 255; i++) 
          begin
              if(in[i])
                  out = out + 8'b1;
